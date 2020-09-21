@@ -1,177 +1,624 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Meni | CaffePizzaRoma</title>
-        <meta name="description" content="Caffe Roma je Vaš najbolji izbor ukoliko želite kvalitetnu uslugu i još kvalitetniju hranu.">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>Caffe bar Roma</title>
+        <link rel="shortcut icon" href="img/icon.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="Caffe Roma, pizza, pasta, tortilja, burito, palačinke, sendviči">
-        <meta name="author" content="Katarina Milićević">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-       <link rel="shortcut icon" type="image/png" href="img/faicon.png" />
-        <link rel="icon" href="img/1.jpg" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <meta charset="UTF-8"/>
+        <script src="https://kit.fontawesome.com/3b6146fca4.js" crossorigin="anonymous"></script>
+        <meta name="description" content="Najbolju ponudu brzih jela mozete pronaci upravo kod nas. Pizze, sendvici, paste, tortilje..sve na jednom mestu."/>
+        <meta name="keywords" content="Pizza, pasta, tortilja, palacinke, lazanje, rizoto, sendvici"/>
+      </head>
     <body>
-        <!--HEADER POCETAK-->
-        <div class="header">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-        <div class="logo">
-            <a class="navbar-brand" href="index.html"><b>Roma</b><span><b>Caffe</b></span></a>
+      <div class="row" id="nav">
+        <div class="col-lg-2 md-2 sm-2 xs-2" id="logo">
+            <img src="img/logo.jpg" alt="logo"/>
+        </div>
+        <div class="col-lg-10 md-4" id="nav1">
+    <nav class="navbar navbar-expand-lg " id="navigacija">
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars , burger"></i> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="navi">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Početna <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="meni.html">Meni</a>
+            <a class="nav-item nav-link" href="kontakt.html">Kontakt</a>
+            <a class="nav-item nav-link" href="autor.html">O autoru</a>
           </div>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Naslovna</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="meni.html">Meni</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kontakt.html" tabindex="-1" aria-disabled="true">Kontakt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="oautoru.html" tabindex="-1" aria-disabled="true">O autoru</a>
-                  </li>
-              </ul>
+        </div>
+      </nav>
+    </div>
+      <div class="cleaner"></div>
       </div>
+          <div class="jumbotron jumbotron-fluid" id="slajder1">
+            <div class="container" id="container1">
+              <h1 class="display-4"><span>MENI</span></h1>
+              <p class="lead"><span>Izaberite jelo po Vašoj želji!</span></p>
+            </div>
+          </div>
+          <div class="container-fluid" id="roma">        
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" id="navmeni">
+                  <li class="breadcrumb-item" id="navli"><a href="index.html">Početna</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Meni</li>
+                </ol>
+            </nav>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni1"><button type="button" data-toggle="modal" data-target="#MyModal8"> <p>PIZZA</p></button>
+                    </div>
+                    <!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog"> 
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header modal-header2">
+          <div class="button">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="h4modal">
+          <h4 class="modal-title">PIZZA</h4></div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Margarita</p></div>
+          <div class="cena">
+            <p>680,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Fungi</p></div>
+          <div class="cena">
+            <p>690,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Vesuvio</p></div>
+          <div class="cena">
+            <p>750,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Vegeteriana</p></div>
+          <div class="cena">
+            <p>750,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Capriccioza</p></div>
+          <div class="cena">
+            <p>820,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-body">
+          <div class="ponuda">
+          <p>Mexicana</p></div>
+          <div class="cena">
+            <p>850,00 din</p>
+          </div>
+          <div class="cleaner"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni2"><button type="button" data-toggle="modal" data-target="#myModal1"><p>Sendviči</p></button></div>
+                    <div class="modal fade" id="myModal1" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Sendviči</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Šunka</p></div>
+                            <div class="cena">
+                              <p>180,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Kulen</p></div>
+                            <div class="cena">
+                              <p>200,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Pečenica</p></div>
+                            <div class="cena">
+                              <p>200,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Rolovani suvi vrat</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Sendvič sa kajmakom i jajima</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Posni sendvič</p></div>
+                            <div class="cena">
+                              <p>200,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni3"><button type="button" data-toggle="modal" data-target="#myModal2"><p>PASTE</p></button></div>
+                    <div class="modal fade" id="myModal2" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Paste</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Karbonara</p></div>
+                            <div class="cena">
+                              <p>690,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Arabiata</p></div>
+                            <div class="cena">
+                              <p>610,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Pasta sa ćuretinom i dimljenim sirom</p></div>
+                            <div class="cena">
+                              <p>710,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Pasta sa gamborima</p></div>
+                            <div class="cena">
+                              <p>790,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Njoke sa telećim raguom</p></div>
+                            <div class="cena">
+                              <p>790,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni4"><button type="button" data-toggle="modal" data-target="#myModal3"><p>Tortilje</p></button></div>
+                    <div class="modal fade" id="myModal3" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Tortilje</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Tortilja sa bolonjez sosom</p></div>
+                            <div class="cena">
+                              <p>400,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Tortilja sa piletinom</p></div>
+                            <div class="cena">
+                              <p>450,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Tortilja sa povrćem</p></div>
+                            <div class="cena">
+                              <p>350,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Tortilja sa tunjevinom</p></div>
+                            <div class="cena">
+                              <p>350,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni5"><button type="button" data-toggle="modal" data-target="#myModal4"><p>Lazanje</p></button></div>
+                    <div class="modal fade" id="myModal4" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Lazanje</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Lazanje - mala porcija</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Lazanje - srednja porcija </p></div>
+                            <div class="cena">
+                              <p>450,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Lazanje - velika porcija</p></div>
+                            <div class="cena">
+                              <p>600,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni6"><button type="button" data-toggle="modal" data-target="#myModal5"><p>Palačinke</p></button></div>
+                    <div class="modal fade" id="myModal5" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Palačinke</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Kačkavalj, pečenica, pavlaka</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Kačkavalj, šunka, pavlaka</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Kačkavalj, suvi vrat, pavlaka</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Kačkavalj, kulen, pavlaka</p></div>
+                            <div class="cena">
+                              <p>300,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Eurokrem</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Marmelada</p></div>
+                            <div class="cena">
+                              <p>130,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni7"><button type="button" data-toggle="modal" data-target="#myModal6"><p>Rižoto</p></button></div>
+                    <div class="modal fade" id="myModal6" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Rižoto</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Rižoto sa morskim plodovima</p></div>
+                            <div class="cena">
+                              <p>650,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Rižoto sa pečurkama</p></div>
+                            <div class="cena">
+                              <p>500,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Rižoto sa piletinom i karijem</p></div>
+                            <div class="cena">
+                              <p>600,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Rižoto sa povrćem</p></div>
+                            <div class="cena">
+                              <p>500,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="tmeni" id="textmeni8"><button type="button" data-toggle="modal" data-target="#myModal7"><p>Pića</p></button></div>
+                    <div class="modal fade" id="myModal7" role="dialog"> 
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header modal-header2">
+                            <div class="button">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="h4modal">
+                            <h4 class="modal-title">Pića</h4></div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Espresso</p></div>
+                            <div class="cena">
+                              <p>120,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Espresso sa mlekom</p></div>
+                            <div class="cena">
+                              <p>140,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Cappuccino</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Topla čokolada</p></div>
+                            <div class="cena">
+                              <p>180,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Čaj</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Limunada</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Ceđeni mix</p></div>
+                            <div class="cena">
+                              <p>250,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Next</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Cedevita</p></div>
+                            <div class="cena">
+                              <p>150,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="ponuda">
+                            <p>Coca cola, Sprite, Fanta, Cocta </p></div>
+                            <div class="cena">
+                              <p>170,00 din</p>
+                            </div>
+                            <div class="cleaner"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+          </div>
+          <div class="container-fluid" id="dostava">
+            <div id="n2">
+              <div id="btn">
+                <h1>BESPLATNA DOSTAVA!</h1>
+                </div>
+              <div id="nesto">
+                <span><p>060 0 521 436</p></span>
+                </div>
+                
+                <div class="cleaner"></div>
+            </div>
+        </div>
+    </div>
+      <div  class="footer">
+        <div  class="copyright">
+          <p>&copy Katarina Milićević, 57/19</p>
+        </div>
         <div class="cleaner"></div>
-        <!--KRAJ HEDERA-->
-        <!--POCETAK KARTICA-->
-        <div class="naslov">
-            <h1>Naše usluge</h1>
-        </div>
-        <div class="kartice">
-        <div class="card-deck">
-            <div class="card">
-                <img src="img/5.jpg" class="card-img-top" alt="pizza">
-                <div class="card-body">
-                  <h5>PIZZA</h5>
-                </div>
-              </div>
-            <div class="card">
-                <img src="img/7.jpg" class="card-img-top" alt="pasta">
-                <div class="card-body">
-                  <h5 class="card-title">PASTA</h5>
-                </div>
-              </div>
-            <div class="card">
-                <img src="img/6.jpg" class="card-img-top" alt="sendvici">
-                <div class="card-body">
-                  <h5 class="card-title">SENDVIČI</h5>
-                </div>
-              </div>
-          </div>
-        </div>
-        <!--DRUGI DEO-->
-            <div class="kartice">
-            <div class="card-deck">
-                <div class="card">
-                    <img src="img/9.jpg" class="card-img-top" alt="lazanje">
-                    <div class="card-body">
-                      <h5 class="card-title">LAZANJE</h5>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="img/10.jpg" class="card-img-top" alt="palacinke">
-                    <div class="card-body">
-                      <h5 class="card-title">PALAČINKE</h5>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img src="img/11.jpg" class="card-img-top" alt="rizoto">
-                    <div class="card-body">
-                      <h5 class="card-title">RIŽOTO</h5>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <!--KRAJ KARTICA-->
-            <!--POCETAK GMAIL-->
-    <div class="infosve2">
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Sve zamerke i kritike pisite nam na:</h5>
-            <!--<p class="card-text">Da li zelis da zapocnes projekat kod nas?</p>-->
-            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" class="btn btn-primary">caffebarroma@gmail.com</a>
-          </div>
-        </div>
       </div>
-      <!--KRAJ GMAIL-->
-      <!--NOVI FUTER-->
-      <div class="svefuter">
-        <footer class="page-footer font-small blue pt-4">
-  
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-  
-        <!-- Grid row -->
-          <div class="row">
-  
-            <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-  
-        <!-- Content -->
-              <h5 class="text-uppercase">CAFFEPIZZAROMA</h5>
-              <p>Besplatna dostava za Beograd</p>
-  
-          </div>
-          <!-- Grid column -->
-  
-            <hr class="clearfix w-100 d-md-none pb-3">
-  
-          <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-  
-            <!-- Links -->
-            <h5 class="text-uppercase">Kontakt</h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a href="kontakt.html">> 060/213 451 1</a>
-              </li>
-            </ul>
-  
-          </div>
-      <!-- Grid column -->
-  
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-  
-        <!-- Links -->
-        <h5 class="text-uppercase">Email</h5>
-  
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new">> caffebarroma@gmail.com</a>
-          </li>
-        </ul>
-  
-            </div>
-      <!-- Grid column -->
-  
-          </div>
-    <!-- Grid row -->
-  
-      </div>
-      <!-- Footer Links -->
-  
-      <!-- Copyright -->
-      <div class="ufuter">
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="index.html"> CaffePizzaRoma</a>
-        </div>
-      </div>
-        <!-- Copyright -->
-  
-        </footer>
-      </div>
-        <!-- KRAJ NOVOG Footer -->
+
+      </body>
     </body>
 </html>
